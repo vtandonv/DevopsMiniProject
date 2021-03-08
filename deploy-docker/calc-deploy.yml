@@ -1,7 +1,8 @@
 ---
-- name: Copy jar file to remoter server
+- name: Pull docker image of Calculator
   hosts: all
   tasks:
-    - copy:
-        src: ./calculatorDevOps-1.0-SNAPSHOT.jar
-        dest: ~/
+    - name: Pull image
+      docker_image:
+        name: vtandonv/calculatordevopslatest
+        source: pull
