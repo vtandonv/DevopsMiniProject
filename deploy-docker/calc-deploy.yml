@@ -1,0 +1,7 @@
+---
+- name: Copy jar file to remoter server
+  hosts: all
+  tasks:
+    - copy:
+        src: ./calculatorDevOps-1.0-SNAPSHOT.jar
+        dest: ~/
