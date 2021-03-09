@@ -17,7 +17,7 @@ public class Calculator {
         do {
             System.out.println("Calculator-DevOps, Choose to perform operation");
             System.out.print("Press 1 to find factorial\nPress 2 to find Square root\nPress 3 to find power\nPress 4 to find natural logarithm\n" +
-                    "5. Press 5 to exit\nEnter your choice: ");
+                    "Press 5 to exit\nEnter your choice: ");
             int choice;
             try {
                 choice = scanner.nextInt();
@@ -28,17 +28,18 @@ public class Calculator {
             switch (choice) {
                 case 1:
                     // do factorial
-                    System.out.print("Enter the first number : ");
+                    System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
                     System.out.println("Factorial of "+number1+" is : " + calculator.factoral(number1));
-
+                    System.out.println("\n");
 
                     break;
                 case 2:
                     // find square root
-                    System.out.print("Enter the first number : ");
+                    System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
                     System.out.println("Square root of "+number1+" is : " + calculator.sqroot(number1));
+                    System.out.println("\n");
 
 
                     break;
@@ -49,12 +50,14 @@ public class Calculator {
                     System.out.print("Enter the second number : ");
                     number2 = scanner.nextDouble();
                     System.out.println(number1+ " raised to power "+number2+" is : " + calculator.power(number1, number2));
+                    System.out.println("\n");
                     break;
                 case 4:
                     // find natural log
-                    System.out.print("Enter the first number : ");
+                    System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
                     System.out.println("Natural log of "+number1+" is : " + calculator.naturalLog(number1));
+                    System.out.println("\n");
 
                     break;
                 default:
