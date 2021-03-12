@@ -5,6 +5,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 public class Calculator {
 
     private static final Logger logger = LogManager.getLogger(Calculator.class);
@@ -12,6 +13,7 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
+
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
         double number1, number2;
@@ -87,7 +89,7 @@ public class Calculator {
 
 
     public double power(double number1, double number2) {
-        logger.info("[POWER] - " + number1 + "RAISED TO " + number2);
+        logger.info("[POWER - " + number1 + " RAISED TO] " + number2);
         double result = Math.pow(number1,number2);
         logger.info("[RESULT - POWER] - " + result);
         return result;
